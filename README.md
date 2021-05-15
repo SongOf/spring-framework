@@ -1,5 +1,5 @@
 # <img src="src/docs/asciidoc/images/spring-framework.png" width="80" height="80"> Spring Framework
-#源码学习
+
 This is the home of the Spring Framework: the foundation for all [Spring projects](https://spring.io/projects). Collectively the Spring Framework and the family of Spring projects is often referred to simply as "Spring". 
 
 Spring provides everything required beyond the Java programming language for creating enterprise applications for a wide range of scenarios and architectures. Please read the [Overview](https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html#spring-introduction) section as reference for a more complete introduction.
@@ -28,3 +28,25 @@ Follow [@SpringCentral](https://twitter.com/springcentral), [@SpringFramework](h
 ## License
 
 The Spring Framework is released under version 2.0 of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0).
+
+#源码学习
+##为什么需要Spring?
+```aidl
+解决类之间的强耦合问题 通过IOC容器
+    -耦合度 弱 -------------> 强
+    -扩展行 强 <------------- 弱
+```
+###解耦合示例
+Mysql ---------> 数据同步到 ----------> Redis
+
+目标：解耦合
+![](docs\img\1.png)
+##IOC容器两个功能
+```aidl
+    IOC 控制反转
+    DI 依赖注入
+```
+![](docs\img\2.png)
+![](https://www.processon.com/view/link/5ee18fa4e401fd1fd287bee3)
+
+##循环依赖
